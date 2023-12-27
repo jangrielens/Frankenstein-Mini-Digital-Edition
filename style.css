@@ -1,0 +1,244 @@
+body {
+
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 10px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+}
+
+.col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.marginAdd {
+    display: none;
+}
+
+.mirador-canvas-nav {
+    display: none !important;
+}
+
+span {
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+.first-word {
+    font-size: 24px;
+	font-weight: bold;
+}
+
+.mirador_container {
+  position: relative; /* Necessary when mirador viewer div's position is absolute */
+  border: 2px grey;
+  margin: 1px;
+  width: 100%;
+  height: 700px;
+}
+
+.mirador_viewer {
+  /*display: block !important;*/
+
+  /* Position is "fixed" in mirador.css.
+   * We cannot confine it within a div with a fixed position.
+   */
+  position: absolute !important;
+  
+  /* width=100%, top=0, bottom=0: necessary to stretch Mirador to
+   * the containing div
+   */
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#viewer {
+	display: block;
+	width: 90%;
+	height: 600px;
+	margin: 1em 5%;
+	position: relative;
+}
+
+
+.supraAdd {
+  vertical-align: 0.9em;
+  font-size: smaller;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.reading-add {
+    vertical-align: baseline !important;
+    font-size: inherit !important;
+}
+
+.inlineSupraAdd {
+    vertical-align: baseline !important;
+    font-size: inherit !important;
+}
+
+.reading-mode-add {
+    vertical-align: baseline;
+    font-size: inherit;
+}
+.reading-mode-style {
+    vertical-align: baseline !important;
+    font-size: inherit !important;
+}
+.hidden-del {
+    display: none !important;
+}
+
+.hidden-metamark {
+    display: none !important;
+}
+
+
+
+.btn-highlight {
+  background-color: #4CAF50; /* Your desired highlight color */
+  color: white; /* Text color for highlighted button */
+  border-color: gray;
+}
+
+
+
+.one-line-table {
+    width: 100%; /* Full width of the container */
+    table-layout: fixed; /* Fixed layout for equal column width */
+    border-collapse: collapse;
+}
+
+.one-line-table th, .one-line-table td {
+    border: 1px solid #ddd;
+    text-align: center; /* Centers text in both header and data cells */
+    padding: 1px;
+}
+
+.one-line-table th {
+    background-color: #f2f2f2;
+}
+
+/* Zebra striping for rows */
+.one-line-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+select {
+    font-size: 0.9em; /* Adjusted font size */
+    font-weight: bold; /* h4 is usually bold */
+    padding: 0.1em 0.4em; /* Adjust padding to control height *!/*/
+    margin: 0; /* Align with typical h4 margin */
+    border: 1px solid #ccc; /* Stylish border */
+    border-radius: 2px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to indicate it's a dropdown */
+    height: 40px; /* Adjust the height to match your table */
+    line-height: 1; /* Adjust line height if needed */
+    width: 40px; /* Adjust width to make the dropdown smaller */
+    /* Add other properties as needed to match your site's h4 style */
+	display: flex;
+	justify-content: center;
+
+}
+
+#selected-value, #selected-number {
+    display: none;
+}
+
+.circled-number {
+    border: 1px solid black;
+    border-radius: 50%; /* Makes the border circular */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    /* Additional styling as needed */
+}
+
+.custom-line {
+    border-top: 2px solid black; 
+}
+
+.img-fluid {
+	height: 100%;
+	object-fit: cover; /* This ensures the image covers the area without stretching */
+}
+
+.custom-navbar-text {
+    color: white;        /* White text */
+    font-size: 1.2em;    /* Increased font size */
+    margin-right: 20px;  /* Adjustable right margin */
+    text-align: right;   /* Right-aligned text */
+}
+
+/* For larger screens, you might want to adjust the font size and margin */
+@media (min-width: 768px) {
+    .custom-navbar-text {
+        font-size: 1.5em;   /* Larger font size on bigger screens */
+        margin-right: 40px; /* Larger margin on the right for bigger screens */
+    }
+}
+.rounded-logo {
+    border-radius: 10%; /* This will create a circular shape */
+    /* Adjust the border-radius value for different rounded corner effects */
+}
+
+.custom-navbar-text {
+    color: white; /* White text */
+}
+
+.highlighted-text-box {
+    background-color: black; /* White background for the highlighted box */
+    border-radius: 5px; /* Rounded corners for the box */
+    padding: 5px; /* Some padding around the text and button */
+    display: inline-block; /* Makes the div inline */
+}
+
+.custom-button {
+    background-color: lightgrey; /* Light grey background for the button */
+    color: black; /* Text color for the button */
+    border: none; /* Removes the border */
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* Optionally, add a hover effect for the button */
+.custom-button:hover {
+    background-color: grey; /* Slightly darker grey on hover */
+    color: white; /* White text on hover */
+}
+
+/* Custom class for bold and normal-sized text */
+.bold-text {
+    font-weight: bold;
+	font-size: 28px;
+}
+
+/* Custom class for bold and smaller text */
+.bold-small-text {
+    
+    font-size: 18px;
+	font-weight: lighter;
+	margin-left: 10px; /* Space before the text */
+    margin-right: 10px; /* Space after the text */
+
+}
+
