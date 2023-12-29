@@ -44,7 +44,7 @@ span {
 
 .mirador_container {
   position: relative; /* Necessary when mirador viewer div's position is absolute */
-  border: 2px grey;
+  border: 2px solid grey;
   margin: 1px;
   width: 100%;
   height: 700px;
@@ -144,7 +144,7 @@ span {
 select {
     font-size: 0.9em; /* Adjusted font size */
     font-weight: bold; /* h4 is usually bold */
-    padding: 0.1em 0.4em; /* Adjust padding to control height *!/*/
+    padding: 0.1em 0.4em; /* Adjust padding to control height */
     margin: 0; /* Align with typical h4 margin */
     border: 1px solid #ccc; /* Stylish border */
     border-radius: 2px; /* Rounded corners */
@@ -199,10 +199,6 @@ select {
 .rounded-logo {
     border-radius: 10%; /* This will create a circular shape */
     /* Adjust the border-radius value for different rounded corner effects */
-}
-
-.custom-navbar-text {
-    color: white; /* White text */
 }
 
 .highlighted-text-box {
