@@ -238,3 +238,13 @@ select {
 
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+sup {
+    font-size: 75%;     /* Smaller font size than the surrounding text */
+    line-height: 0;     /* Prevents additional line height */
+    vertical-align: up; /* Adjusts the vertical position */
+    color: #555;        /* Example to change color */
+}
