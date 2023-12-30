@@ -81,18 +81,34 @@
         </span>
     </xsl:template>
 	
-	<xsl:template match="tei:hi[@rend='underline']">
-    <span class="underline">
-        <xsl:apply-templates/>
-    </span>
-</xsl:template>
+	
 
 <xsl:template match="tei:hi[@rend='sup']">
     <sup>
         <xsl:apply-templates/>
     </sup>
 </xsl:template>
+
+<xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+
     
+
+    <!-- Style for underlined text. -->
+    <xsl:template match="tei:hi[@rend='underline']">
+        <span style="text-decoration: underline;">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <!-- Style for additions with the attribute "overwritten". 
+    <xsl:template match="tei:add[@rend='overwritten']">
+        <span class="overwritten">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    -->
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
     
