@@ -10,7 +10,7 @@
 
     <xsl:template match="tei:body">
         <div class="row">
-        <div class="col-3"><br/><br/><br/><br/><br/>
+        <div class="col-3 marginleft"><br/><br/><br/><br/><br/>
             <xsl:for-each select="//tei:add[@place = 'marginleft']">
                 <xsl:choose>
                     <xsl:when test="parent::tei:del">
@@ -49,7 +49,7 @@
 
   
     <xsl:template match="tei:add[@place = 'marginleft']">
-        <span class="marginAdd">
+        <span class="marginleft">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -66,14 +66,10 @@
     <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
     <xsl:template match="tei:add[@place = 'supralinear']">
         <span class="supraAdd">
-            <xsl:apply-templates/>
+             <xsl:value-of select="."/>
         </span>
     </xsl:template>
-    <xsl:template match="tei:metamark">
-        <span class="metaMark">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
+    
 	
 	<xsl:template match="//tei:metamark[@function='pagenumber']">
         <span class="circled-number" >
@@ -93,7 +89,11 @@
         <br/>
     </xsl:template>
 
-    
+    <xsl:template match="tei:metamark[@function='insert']">
+    <span class="caret metamark">
+        <xsl:value-of select="."/>
+    </span>
+</xsl:template>
 
     <!-- Style for underlined text. -->
     <xsl:template match="tei:hi[@rend='underline']">
@@ -109,7 +109,28 @@
         </span>
     </xsl:template>
     -->
-    <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
+    <!-- add additional templates below, for example to transform the tei:empty elements, , the underlined text,-->
+    <xsl:template match="tei:note">
+    <div class="note-hidden">
+        <xsl:apply-templates/>
+    </div>
+</xsl:template>
 
-    
+<xsl:template match="tei:list">
+    <ul class="no-bullets">
+        <xsl:apply-templates select="tei:item"/>
+    </ul>
+</xsl:template>
+
+<xsl:template match="tei:item">
+    <li>
+        <xsl:if test="@rend = 'right'">
+            <xsl:attribute name="class">indent</xsl:attribute>
+        </xsl:if>
+        <xsl:apply-templates/>
+    </li>
+</xsl:template>
+
+
+
 </xsl:stylesheet>

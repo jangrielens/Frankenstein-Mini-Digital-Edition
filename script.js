@@ -212,7 +212,7 @@ function toggleTextFeatures() {
     });
 
     // Toggle visibility of elements with 'metamark' class inside <add>
-    var metamarks = document.querySelectorAll('.metaMark');
+    var metamarks = document.querySelectorAll('.metamark');
     metamarks.forEach(function(metamark) {
         metamark.style.display = metamark.style.display === 'none' ? '' : 'none';
     });

@@ -32,6 +32,8 @@ p {
     display: none !important;
 }
 
+
+}
 span {
 	font-size: 18px;
 	line-height: 1.4em;
@@ -117,7 +119,6 @@ span {
   color: white; /* Text color for highlighted button */
   border-color: gray;
 }
-
 
 
 .one-line-table {
@@ -248,3 +249,37 @@ sup {
     vertical-align: up; /* Adjusts the vertical position */
     color: #555;        /* Example to change color */
 }
+
+.caret {
+    vertical-align: -0.9em;
+    
+    left: 0;
+    font-size: smaller; /* Optional: Adjust the font size if needed */
+}
+
+.note-hidden {
+    visibility: none;
+	display: none; /* Hide the note initially */
+}
+
+/* Example: reveal the note on hover */
+.note-hidden:hover {
+    display: block;
+	white-space: nowrap;
+}
+
+.marginleft {
+	
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+.col-9 .marginleft {
+    display: none;
+}
+
+.no-bullets {
+    list-style-type: none; /* Removes bullets */
+    
+}
+
