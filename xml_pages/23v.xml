@@ -33,10 +33,10 @@
       <div type="page" n="23v" rend="verso">
         <pb facs="#p23v"/>
         <metamark function="pagenumber"><num><hi rend="circled">80</hi></num></metamark>
-        <p>
-        the doors being opened <unclear reason="ink blot">I</unclear> perceived Henry<lb/> 
-        Clerval, who on <del type="crossedOut" hand="#PBS" /><unclear/>seeing me instantly sprung out.<lb/>
-      </p>
+        <lb/>
+        the doors being opened I perceived Henry<lb/> 
+		Clerval, who on <del type="crossedOut" hand="#PBS">seee<note>unclear due to inkblob</note></del> seeing me instantly sprung out.<lb/>
+     
       <p>
         "My dear Frankenstein," exclaimed he.<lb/>
         "How glad I am to see you; how<lb/>
@@ -46,7 +46,7 @@
       </p>
       <p>
         Nothing could equal my delight<lb/>
-        on <del rend="crossedOut">see</del><choice><sic>seing</sic><corr>seeing</corr></choice> Clerval: his presence<lb/>
+		on <del rend="crossedOut">see</del> seing <note>seeing</note> Clerval: his presence<lb/>
         brought back to my thoughts my fa-<lb/>
         ther, Elizabeth and all those scenes<lb/>
         of home so dear to my recollection.<lb/>

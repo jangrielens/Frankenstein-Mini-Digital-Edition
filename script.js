@@ -134,6 +134,7 @@
  function selectHand(event) {
   var visibleMary = document.getElementsByClassName('#MWS');
   var visiblePercy = document.getElementsByClassName('#PBS');
+ 	var elements = document.querySelectorAll('[hand="#PBS"]');
   
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visibleMary);
@@ -160,12 +161,18 @@
     PercyArray.forEach(function(element) {
       element.style.color = 'red'; // Change color as needed
     });
+	
     MaryArray.forEach(function(element) {
       element.style.color = 'black';
     });
   }
 }
-
+function colorPBSRed() {
+    var elements = document.querySelectorAll('[hand="#PBS"]');
+    elements.forEach(function(el) {
+        el.style.color = 'red';
+    });
+}
 
 
 

@@ -32,8 +32,8 @@
     <body>
       <div type="page" n="22v" rend="recto">
         <pb facs="#p22r"/>
-        <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark>
-      <p>
+        <metamark function="pagenumber"><num><hi rend="circled">77</hi></num></metamark><lb/>
+      
          to change and I thought that I held <lb/>
          the corpse of my dead mother in my arms 
           <del type="overwritten" hand="#MWS" rend="blackink">,</del>
@@ -85,12 +85,12 @@
           and his eyes; if eyes
         <lb/>
         they may be called, were fixed on me – His<lb/>
-        <add place="marginleft" hand="#PBS" rend="blackink">inarticulate</add>jaws opened and he muttered <add place="supralinear" hand="#PBS" rend="blackink">in</add> some <del type="crossedOut" hand="#MWS" rend="blackink">words</del><lb/>
+        <add place="marginleft" hand="#PBS" rend="blackink">inarticulate</add>jaws opened and he muttered <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">in</add></del> some <del type="crossedOut" hand="#MWS" rend="blackink">words</del><lb/>
         <add place="marginleft" hand="#PBS" rend="blackink">sounds</add>while a grin wrinkled his cheeks. He<lb/>
         he might have spoken but I did not<lb/>
-        hear — one <choice><sic>had</sic><corr>hand</corr></choice> was stretched out<lb/>
+        hear — one <del type="crossedOut" hand="#PBS" rend="blackink">had</del> hand was stretched out<lb/>
         to detain me but I escaped and <del type="crossedOut" hand="#PBS" rend="blackink">ran</del><lb/>
-        rushed down <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">the</add></del> stairs I took refuge in<lb/>
+		rushed down <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">the</add></del> stairs <note>blob</note> I took refuge in<lb/>
         a court-yard belonging to the house<lb/>
         which I inhabited; where I remained<lb/>
         <add place="marginleft" hand="#PBS" rend="blackink">during</add>the rest of the night walking up and<lb/>
@@ -99,7 +99,7 @@
         sound as if it were to announce the<lb/>
         arrival of the demoniacal corpse to<lb/>
         which I had so miserabl<del type="overwritten" hand="#PBS" rend="blackink">e</del><add place="inline" hand="#PBS" rend="blackink">y</add> given life.<lb/>
-        Oh! no mortal could support <lb/>
+        <p>Oh! no mortal could support <lb/>
         the horror of that countenance.a<lb/>
         mummy
 		<add place="infralinear" hand="#MWS" rend="blackink"><metamark function="insert">^</metamark></add>
